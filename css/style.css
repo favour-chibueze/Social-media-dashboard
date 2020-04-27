@@ -63,7 +63,7 @@ h4 {
           grid-template-rows: repeat(2, 1fr);
           grid-column-gap: 23px;
           grid-row-gap: 29px;
-          height: 190px;
+          
       }
 
   .grid_2_of_4{
@@ -274,7 +274,8 @@ color: hsl(228, 12%, 44%);
 
 footer {
     text-align: center;
-    margin-top: 160px;
+    position: relative;    
+    bottom: 0;
     color: #ccc;
 }
 
@@ -346,20 +347,14 @@ color: hsl(228, 12%, 44%)
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   footer {
-    position: absolute;
-    bottom: -224%;
+    position: relative;
+    bottom: 0;
+    left: 0;
     color: #ccc;
-    text-align: center;
-    left: 87px;
+    text-align: center;    
 }
 }
 
-@media screen and (max-width: 500px){
-footer {
-bottom: -225%;
-left: 87px;
-}
-}
 
 
 
