@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background-color: hsl(232, 19%, 15%);
+    max-height: 100%;
+    font-family: Inter, sans-serif;
+  }
+
+
+  .wrapper{margin-right: auto;
+  margin-left:  auto;
+  max-width: 1089px; 
+  padding-right: 10px; 
+  padding-left:  10px;
+  }
+
+  h1.text {
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+    margin-top: 40px;
+}
+
+p.text {
+    color: hsl(228, 34%, 66%);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: -16px;
+}
+.toggle-text p{
+    color: hsl(228, 34%, 66%);
+    font-weight: bold;
+}
+
+.name  { 
+    color: hsl(228, 34%, 66%); 
+}
+
+.followers_text{
+    font-size: 3em;
+    font-weight: bold;
+    color: #ccc;
+    margin-top: 25px;
+}
+
+h4 {
+    margin-top: -29px;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+  .grid_1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-rows: 1fr;
+      grid-column-gap: 23px;
+      
+  }
+ 
+      .grid_2 {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 23px;
+          grid-row-gap: 29px;
+          height: 190px;
+      }
+
+  .grid_2_of_4{
+    display: grid;  
+    grid-template-columns: auto auto;
+      background-color: hsl(228, 28%, 20%);
+      border-top: 2px solid hsl(228, 28%, 20%);
+      padding: 0 13px 18px 13px;
+        color: hsl(228, 34%, 66%);
+        font-weight: normal;
+        font-size: 12px;
+        height: 144px;
+        border-radius: 5px;
+  }
+
+.grid_2_of_4:hover {
+    background-color: hsl(232, 19%, 15%);
+    cursor: pointer;
+    -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.col_1 {
+    background-color: hsl(228, 28%, 20%);
+    text-align: center;
+    height: 190px;
+    padding: 25px;
+    color: hsl(228, 34%, 66%);
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+  .col_1:hover {
+    background-color: hsl(232, 19%, 15%);
+    cursor: pointer;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+  .col1 {
+    margin-left: 109px;
+    margin-top: 13px;
+}
+ .green-text {
+    font-size: small;
+    color: hsl(163, 72%, 41%);
+    font-weight: 200;
+}
+ .red-text {
+    color: hsl(356, 69%, 56%);
+    font-weight: 200;
+    font-size: small;
+}
+
+
+  
+  .span_1_of_1{
+    border-top: 6px solid hsl(195, 100%, 50%);
+  }
+  
+  .span_1_of_2{
+    border-top: 6px solid hsl(203, 89%, 53%);
+  }
+  
+  .span_1_of_3{
+    border-top: 4px solid hsl(329, 70%, 58%);
+  }
+  
+  .span_1_of_4{
+    border-top: 6px solid hsl(348, 97%, 39%);
+  }
+
+
+     h4.text-2  {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 52px;
+}
+
+p.grid_icon {
+    margin-left: 96px;
+    margin-top: 60px;
+}
+
+h5{
+    font-weight: normal;
+    font-size: 1em;
+    color:hsl(228, 34%, 66%)
+    }
+
+  
+  .toggle-text{
+      float: right;
+      margin-top: -80px;
+      margin-right: 68px;
+  }
+  .switch { 
+      float: right;
+      position: relative;
+      width: 60px;
+      height: 34px;
+      margin-top: -71px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: hsl(232, 19%, 15%);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: hsl(163, 72%, 41%);
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+     
+   .light-mode {
+      background-color: hsl(0, 0%, 100%);
+      color: black;
+  }
+  
+  .light-mode .col_1 {
+    background-color: hsl(227, 47%, 96%);
+}
+  .light-mode .grid_2_of_4 {
+    background-color: hsl(227, 47%, 96%);
+}
+
+  .light-mode .col_1:hover {
+    background-color: #A9A9A9;
+    cursor: pointer;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.light-mode .grid_2_of_4:hover {
+  background-color: #A9A9A9;
+  cursor: pointer;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.light-mode  h1.text {
+    color: hsl(230, 17%, 14%);
+}
+
+.light-mode p.text{
+color: hsl(228, 12%, 44%);
+}
+
+.light-mode .toggle-text p{
+    color:hsl(228, 12%, 44%);
+}
+
+.light-mode .followers_text{
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 160px;
+    color: #ccc;
+}
+
+.light-mode footer {
+      color: hsl(230, 17%, 14%);
+  }
+
+.light-mode h4 {
+    color: hsl(228, 12%, 44%);
+}
+
+
+.light-mode .name{
+    color: hsl(228, 12%, 44%);
+}
+
+.light-mode .green-text {
+    font-size: small;
+    color: hsl(163, 72%, 41%);
+    font-weight: 200;
+}
+.light-mode .red-text {
+    color: hsl(356, 69%, 56%);
+    font-weight: 200;
+    font-size: small;
+}
+
+
+.light-mode h4.text-2 {
+    color: hsl(230, 17%, 14%);
+}
+
+.light-mode h5{
+font-weight: normal;
+font-size: 1em;
+color: hsl(228, 12%, 44%)
+}
+
+@media screen and (max-width: 600px) {
+  h1.text {
+    font-size: 0.9em;
+    margin-top: 34px;
+}
+  .toggle-text p {
+    display: none; }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px){
+  body {
+      width: 375px;
+      height: 100%;
+  }
+  h1.text {
+      font-size: 1.5em;
+      margin-top: 34px;
+  }
+  .switch {
+    left: 60px;
+    width: 60px;
+    height: 34px;
+    margin-top: -60px;
+}
+
+  .grid_1, .grid_2 {
+      display: grid;
+      grid-gap: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  footer {
+    position: absolute;
+    bottom: -224%;
+    color: #ccc;
+    text-align: center;
+    left: 87px;
+}
+}
+
+@media screen and (max-width: 500px){
+footer {
+bottom: -225%;
+left: 87px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
